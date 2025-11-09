@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HigherIncomeJobs - Premium Work From Home CPL Opportunities (US)</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+        }
+        
+        .gradient-bg-dark {
+            background: linear-gradient(135deg, #047857 0%, #059669 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .accent-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        
+        .accent-gradient-text {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+        
+        .bounce-animation {
+            animation: bounce 1s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+            50% { transform: translateY(0); animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+        }
+        
+        .live-indicator {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .live-indicator::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -15px;
+            width: 8px;
+            height: 8px;
+            background: #ef4444;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            animation: pulse 1.5s infinite;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .floating-element {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .chat-bubble {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: #059669;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .chat-bubble:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .job-card {
+            transition: all 0.3s ease;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #10b981;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .process-step {
+            position: relative;
+            padding: 20px;
+            border-radius: 15px;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .process-step:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            animation: slideIn 0.5s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #059669, transparent);
+            height: 2px;
+            margin: 3rem 0;
+        }
+        
+        .income-badge {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .cpl-badge {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .highlight-income {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+        
+        .cpl-card {
+            border: 2px solid #10b981;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .cpl-header {
+            background: linear-gradient(135deg, #059669, #10b981);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10b981;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .stats-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #10b981;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: """;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            font-size: 60px;
+            color: #10b981;
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .guarantee-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #fef3c7;
+            color: #92400e;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-weight: 600;
+            border: 1px solid #fbbf24;
+        }
+        
+        .count-up {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #059669, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #059669, #10b981);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- JavaScript Configuration -->
+    <script>
+        // Centralized link management
+        const AFFILIATE_LINK = "https://nx2bs.com/c?o=58&a=22574";
+        
+        // Function to redirect to affiliate link
+        function redirectToAffiliate() {
+            window.open(AFFILIATE_LINK, '_blank');
+        }
+        
+        // Function to handle form submission
+        function handleFormSubmission() {
+            // Show processing status
+            const statusDiv = document.getElementById('applicationStatus');
+            statusDiv.classList.remove('hidden');
+            
+            // Simulate processing steps
+            setTimeout(() => {
+                statusDiv.innerHTML = `
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-eye text-white text-sm"></i>
+                        </div>
+                        <span class="text-yellow-700 font-semibold">Application under review...</span>
+                    </div>
+                `;
+            }, 2000);
+            
+            setTimeout(() => {
+                statusDiv.innerHTML = `
+                    <div class="flex items-center">
+                        <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-check text-white text-sm"></i>
+                        </div>
+                        <span class="text-green-700 font-semibold">Application approved! Redirecting to high-income job portal...</span>
+                    </div>
+                `;
+                statusDiv.className = 'mt-6 p-4 bg-green-50 rounded-xl';
+                
+                // Redirect to affiliate link after approval
+                setTimeout(() => {
+                    window.open(AFFILIATE_LINK, '_blank');
+                }, 1500);
+            }, 4000);
+        }
+        
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click handlers to all Apply Now buttons
+            const applyButtons = document.querySelectorAll('.apply-now-btn');
+            applyButtons.forEach(button => {
+                button.addEventListener('click', redirectToAffiliate);
+            });
+            
+            // Add click handlers to all Watch Demo buttons
+            const demoButtons = document.querySelectorAll('.demo-btn');
+            demoButtons.forEach(button => {
+                button.addEventListener('click', redirectToAffiliate);
+            });
+            
+            // Add form submission handler
+            const applicationForm = document.getElementById('liveApplicationForm');
+            if (applicationForm) {
+                applicationForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    handleFormSubmission();
+                });
+            }
+            
+            // Live notification auto-hide
+            setTimeout(() => {
+                const notification = document.getElementById('liveNotification');
+                if (notification) {
+                    notification.style.animation = 'slideIn 0.5s ease-out reverse';
+                    setTimeout(() => notification.remove(), 500);
+                }
+            }, 5000);
+            
+            // Chat function
+            window.openChat = function() {
+                alert('Live chat will open here! Our career advisors are available 24/7 to help you find high-income remote opportunities.');
+            };
+            
+            // Counter animation
+            function animateCounter(element, target, duration) {
+                let start = 0;
+                const increment = target / (duration / 16);
+                const timer = setInterval(() => {
+                    start += increment;
+                    if (start >= target) {
+                        element.textContent = target + '+';
+                        clearInterval(timer);
+                    } else {
+                        element.textContent = Math.floor(start) + '+';
+                    }
+                }, 16);
+            }
+            
+            // Initialize counters when they come into view
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.getAttribute('data-target'));
+                        animateCounter(entry.target, target, 2000);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('.count-up').forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+    </script>
+
+    <!-- Live Notification -->
+    <div class="notification" id="liveNotification">
+        <i class="fas fa-check-circle mr-2"></i>
+        <span class="live-indicator">LIVE</span> - 142 high-income CPL applications processed in last hour!
+    </div>
+
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                        <i class="fas fa-laptop-house text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">HigherIncomeJobs</h1>
+                        <p class="text-sm opacity-90">Premium Work From Home CPL Portal</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="trust-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>CPL Verified</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-clock"></i>
+                        <span class="live-indicator">24/7 LIVE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="cpl-badge inline-block mb-4">
+                        <i class="fas fa-bolt mr-1"></i> HIGH CPL RATES
+                    </div>
+                    <h1 class="text-5xl font-bold mb-6 leading-tight">
+                        Premium
+                        <span class="block accent-gradient-text">
+                            CPL Opportunities
+                        </span>
+                    </h1>
+                    <p class="text-xl mb-8 opacity-90">
+                        $75K+ Annual Income • High CPL Rates • 100% Remote Work • US Companies
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <div class="flex items-center space-x-2 bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                            <i class="fas fa-check text-green-300"></i>
+                            <span>Premium CPL Offers</span>
+                        </div>
+                        <div class="flex items-center space-x-2 bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                            <i class="fas fa-star text-yellow-300"></i>
+                            <span>5-Star Reviews</span>
+                        </div>
+                        <div class="flex items-center space-x-2 bg-white bg-opacity-20 px-4 py-2 rounded-full">
+                            <i class="fas fa-bolt text-blue-300"></i>
+                            <span>Instant Processing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cpl-card mb-8">
+                        <div class="cpl-header">
+                            <i class="fas fa-trophy mr-2"></i>PREMIUM CPL OFFER
+                        </div>
+                        <div class="p-4 bg-white">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-800">High-Value Remote Positions</h4>
+                                    <p class="text-gray-600">Premium CPL rates for qualified applicants</p>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-2xl font-bold accent-gradient-text">$85-150</div>
+                                    <div class="text-sm text-gray-500">Per Qualified Lead</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <!-- Apply Now Button -->
+                        <button class="apply-now-btn accent-gradient text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                            <i class="fas fa-rocket mr-2"></i>
+                            Apply Now - HIGH CPL
+                        </button>
+
+                        <!-- Watch Demo Button -->
+                        <button class="demo-btn bg-white text-green-600 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                            <i class="fas fa-play mr-2"></i>
+                            Watch Demo
+                        </button>
+                    </div>
+                    
+                    <div class="mt-8 flex items-center space-x-4">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-2 border-white">JD</div>
+                            <div class="w-10 h-10 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-2 border-white">SM</div>
+                            <div class="w-10 h-10 bg-gradient-to-r from-pink-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold text-sm border-2 border-white">LJ</div>
+                        </div>
+                        <div class="text-sm">
+                            <div class="font-semibold">Join 2,500+ Successful Applicants</div>
+                            <div class="flex items-center">
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="ml-2">Rated 4.9/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="floating-element">
+                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Remote Work Setup" class="w-full h-auto rounded-2xl shadow-2xl">
+                    </div>
+                    <div class="absolute -top-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-full font-semibold pulse-animation">
+                        <i class="fas fa-check-circle mr-1"></i>
+                        High CPL Active
+                    </div>
+                    
+                    <!-- Floating Elements -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-lg">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-dollar-sign text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800">$85-150</div>
+                                <div class="text-sm text-gray-600">CPL Rates</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute top-1/2 -right-8 bg-white p-4 rounded-2xl shadow-lg">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-briefcase text-green-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-gray-800">1,200+</div>
+                                <div class="text-sm text-gray-600">Positions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="stats-card">
+                    <div class="count-up" data-target="2500">0</div>
+                    <div class="text-gray-600 font-medium">Successful Applicants</div>
+                </div>
+                <div class="stats-card">
+                    <div class="count-up" data-target="1200">0</div>
+                    <div class="text-gray-600 font-medium">CPL Positions</div>
+                </div>
+                <div class="stats-card">
+                    <div class="count-up" data-target="150">0</div>
+                    <div class="text-gray-600 font-medium">Premium Partners</div>
+                </div>
+                <div class="stats-card">
+                    <div class="count-up" data-target="94">0</div>
+                    <div class="text-gray-600 font-medium">Approval Rate %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CPL Job Categories Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Premium CPL Categories</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">High-value work-from-home opportunities with premium CPL rates from top US companies</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Software Development -->
+                <div class="job-card bg-white shadow-lg">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-purple-500 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Software Development" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-code mr-1"></i>Tech
+                        </div>
+                        <div class="absolute bottom-4 right-4 cpl-badge pulse-animation">
+                            $120-150 CPL
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Software Development</h4>
+                        <p class="text-gray-600 mb-4">Remote developer roles with premium CPL rates and top tech companies</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-green-600 font-semibold">$85-150K/year</span>
+                            <div class="flex items-center">
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">(4.9)</span>
+                            </div>
+                        </div>
+                        <button class="apply-now-btn w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Apply Now - HIGH CPL
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="job-card bg-white shadow-lg">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-blue-500 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Digital Marketing" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-chart-line mr-1"></i>Marketing
+                        </div>
+                        <div class="absolute bottom-4 right-4 cpl-badge pulse-animation">
+                            $95-120 CPL
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Digital Marketing</h4>
+                        <p class="text-gray-600 mb-4">High-paying remote marketing roles with performance bonuses and premium CPL</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-green-600 font-semibold">$75-120K/year</span>
+                            <div class="flex items-center">
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">(4.8)</span>
+                            </div>
+                        </div>
+                        <button class="apply-now-btn w-full bg-gradient-to-r from-green-500 to-blue-600 text-white py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                            <i class="fas fa-bolt mr-2"></i>
+                            Apply Now - HIGH CPL
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sales Executive -->
+                <div class="job-card bg-white shadow-lg">
+                    <div class="h-48 bg-gradient-to-br from-pink-400 to-red-500 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Sales Executive" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-handshake mr-1"></i>Sales
+                        </div>
+                        <div class="absolute bottom-4 right-4 cpl-badge pulse-animation">
+                            $110-140 CPL
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Sales Executive</h4>
+                        <p class="text-gray-600 mb-4">Remote sales roles with high commission, performance bonuses, and premium CPL rates</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-green-600 font-semibold">$90-200K/year</span>
+                            <div class="flex items-center">
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">(4.7)</span>
+                            </div>
+                        </div>
+                        <button class="apply-now-btn w-full bg-gradient-to-r from-pink-500 to-red-600 text-white py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                            <i class="fas fa-sparkles mr-2"></i>
+                            Apply Now - HIGH CPL
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project Management -->
+                <div class="job-card bg-white shadow-lg">
+                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Project Management" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute top-4 left-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-tasks mr-1"></i>Management
+                        </div>
+                        <div class="absolute bottom-4 right-4 cpl-badge pulse-animation">
+                            $100-130 CPL
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-2xl font-bold mb-2">Project Management</h4>
+                        <p class="text-gray-600 mb-4">Remote management roles with leadership opportunities and premium CPL offers</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-green-600 font-semibold">$95-140K/year</span>
+                            <div class="flex items-center">
+                                <div class="star-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">(4.9)</span>
+                            </div>
+                        </div>
+                        <button class="apply-now-btn w-full bg-gradient-to-r from-yellow-500 to-orange-600 text-white py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                            <i class="fas fa-handshake mr-2"></i>
+                            Apply Now - HIGH CPL
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="apply-now-btn accent-gradient text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                    <i class="fas fa-search mr-2"></i>
+                    View All CPL Opportunities
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CPL Process Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">How Our CPL System Works</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Simple 4-step process to connect with high-paying remote opportunities and earn premium CPL rates</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="process-step text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">1</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Submit Application</h4>
+                    <p class="text-gray-600">Complete our quick CPL application form with your details</p>
+                    <div class="mt-4 text-green-500 font-semibold">
+                        <i class="fas fa-check-circle"></i> 5 Min Process
+                    </div>
+                </div>
+                
+                <div class="process-step text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 pulse-animation">
+                        <span class="text-white font-bold text-xl">2</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">CPL Verification</h4>
+                    <p class="text-gray-600">Instant qualification for premium CPL offers based on your profile</p>
+                    <div class="mt-4 text-green-500 font-semibold">
+                        <i class="fas fa-clock"></i> Instant
+                    </div>
+                </div>
+                
+                <div class="process-step text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-bold text-xl">3</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Premium Matching</h4>
+                    <p class="text-gray-600">Connected with high-value CPL partners and opportunities</p>
+                    <div class="mt-4 text-green-500 font-semibold">
+                        <i class="fas fa-handshake"></i> Quality Partners
+                    </div>
+                </div>
+                
+                <div class="process-step text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 bounce-animation">
+                        <span class="text-white font-bold text-xl">4</span>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">High CPL Earnings</h4>
+                    <p class="text-gray-600">Start earning with premium CPL rates and career opportunities</p>
+                    <div class="mt-4 text-green-500 font-semibold">
+                        <i class="fas fa-trophy"></i> $85-150 CPL
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Why Choose HigherIncomeJobs CPL?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Premium features designed to maximize your CPL earnings and career opportunities</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-green-600 text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Premium CPL Rates</h4>
+                    <p class="text-gray-600">Access to the highest CPL rates in the industry for qualified professionals</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-green-600 text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Verified Partners</h4>
+                    <p class="text-gray-600">All our CPL partners are thoroughly vetted and verified for quality</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-green-600 text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">24/7 Support</h4>
+                    <p class="text-gray-600">Round-the-clock support for all your CPL and career-related queries</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-green-600 text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Performance Tracking</h4>
+                    <p class="text-gray-600">Real-time tracking of your CPL applications and earnings</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-user-tie text-green-600 text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Career Advisors</h4>
+                    <p class="text-gray-600">Dedicated career advisors to help maximize your CPL potential</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-lock text-green-600 text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Secure Platform</h4>
+                    <p class="text-gray-600">Bank-level security to protect your personal and professional data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Success Stories from CPL Partners</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">See what our successful remote professionals say about high CPL earnings and career opportunities</p>
+                <div class="flex justify-center items-center mt-4">
+                    <div class="flex star-rating text-3xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="ml-3 text-2xl font-bold">4.9/5</span>
+                    <span class="ml-3 text-gray-600">Based on 2,847 reviews</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                            SM
+                        </div>
+                        <div class="ml-4">
+                            <h5 class="font-semibold">Sarah Mitchell</h5>
+                            <p class="text-sm text-gray-600">Remote Software Engineer</p>
+                        </div>
+                        <div class="ml-auto flex star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Earned $145 CPL for my software developer profile! The premium company connections are incredible. Highly recommend HigherIncomeJobs CPL!"</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Verified CPL Earnings</span>
+                        <span class="ml-auto">2 weeks ago</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                            JD
+                        </div>
+                        <div class="ml-4">
+                            <h5 class="font-semibold">James Donovan</h5>
+                            <p class="text-sm text-gray-600">Digital Marketing Director</p>
+                        </div>
+                        <div class="ml-auto flex star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Found premium CPL offers paying $120 for marketing roles. The application process was smooth and professional. Multiple CPL earnings!"</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Verified CPL Earnings</span>
+                        <span class="ml-auto">3 weeks ago</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                            LJ
+                        </div>
+                        <div class="ml-4">
+                            <h5 class="font-semibold">Lisa Johnson</h5>
+                            <p class="text-sm text-gray-600">Sales Team Lead</p>
+                        </div>
+                        <div class="ml-auto flex star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Perfect for high CPL sales roles! My remote position qualified for $140 CPL. The 24/7 career support is outstanding!"</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>Verified CPL Earnings</span>
+                        <span class="ml-auto">1 month ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-16 gradient-bg-dark text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">Our CPL Guarantee</h2>
+                <p class="text-xl mb-8 opacity-90">We're committed to providing the highest quality CPL opportunities with premium rates and reliable partners</p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-check text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Quality Verified</h4>
+                        <p class="opacity-80">All CPL partners thoroughly vetted</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-dollar-sign text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Premium Rates</h4>
+                        <p class="opacity-80">Highest CPL rates in the industry</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-shield-alt text-2xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Secure & Reliable</h4>
+                        <p class="opacity-80">Bank-level security for your data</p>
+                    </div>
+                </div>
+                
+                <div class="guarantee-badge inline-block mb-8">
+                    <i class="fas fa-certificate mr-2"></i> 100% CPL VERIFICATION GUARANTEE
+                </div>
+                
+                <button class="apply-now-btn accent-gradient text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Start Your CPL Journey Today
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Application Form -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-4">
+                        <span class="live-indicator">LIVE</span> High CPL Application System
+                    </h2>
+                    <p class="text-xl text-gray-600">Real-time processing for premium CPL opportunities with instant qualification</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-3xl shadow-2xl p-8 border border-green-100">
+                    <form id="liveApplicationForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Enter your full name" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Phone Number *</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Enter your phone number" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Desired CPL Role *</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                                    <option value="">Select High CPL Role</option>
+                                    <option value="tech">Software Development ($120-150 CPL)</option>
+                                    <option value="marketing">Digital Marketing ($95-120 CPL)</option>
+                                    <option value="sales">Sales Executive ($110-140 CPL)</option>
+                                    <option value="management">Project Management ($100-130 CPL)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Current Employment</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent">
+                                    <option value="">Select Status</option>
+                                    <option value="employed">Currently Employed</option>
+                                    <option value="unemployed">Seeking Employment</option>
+                                    <option value="freelance">Freelance/Contract</option>
+                                    <option value="student">Student</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">Target CPL Range</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" required>
+                                    <option value="">Select Target</option>
+                                    <option value="85-100">$85-100 CPL</option>
+                                    <option value="100-120">$100-120 CPL</option>
+                                    <option value="120-140">$120-140 CPL</option>
+                                    <option value="140plus">$140+ CPL</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Experience Level</label>
+                            <div class="flex space-x-4">
+                                <label class="flex items-center">
+                                    <input type="radio" name="experience" value="beginner" class="mr-2">
+                                    <span>0-2 Years</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="experience" value="intermediate" class="mr-2">
+                                    <span>3-5 Years</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="radio" name="experience" value="advanced" class="mr-2">
+                                    <span>5+ Years</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Professional Summary</label>
+                            <textarea class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" rows="4" placeholder="Tell us about your skills, experience, and CPL expectations..."></textarea>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <input type="checkbox" class="mr-3" required>
+                            <label class="text-gray-700">I agree to the <a href="#" class="text-green-600 hover:underline">Terms of Service</a> and <a href="#" class="text-green-600 hover:underline">Privacy Policy</a></label>
+                        </div>
+                        
+                        <button type="submit" class="w-full accent-gradient text-white py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Submit High CPL Application - LIVE Processing
+                        </button>
+                    </form>
+                    
+                    <div id="applicationStatus" class="mt-6 p-4 bg-green-50 rounded-xl hidden">
+                        <div class="flex items-center">
+                            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-cog text-white text-sm animate-spin"></i>
+                            </div>
+                            <span class="text-green-700 font-semibold">Processing your high CPL application...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges & Security -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Trust & CPL Verification</h2>
+                <p class="text-xl text-gray-600">Your career data is protected with premium security measures and industry-leading verification</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">CPL Verified</h4>
+                    <p class="text-sm text-gray-600">Premium partner network</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-user-shield text-white text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Privacy Protected</h4>
+                    <p class="text-sm text-gray-600">GDPR compliant</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-white text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">Premium CPL</h4>
+                    <p class="text-sm text-gray-600">High-value offers</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-white text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold mb-2">CPL Support</h4>
+                    <p class="text-sm text-gray-600">Always available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+                    <p class="text-xl text-gray-600">Get answers to common questions about our CPL program</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        <h4 class="text-xl font-semibold mb-2">What is CPL and how does it work?</h4>
+                        <p class="text-gray-600">CPL stands for Cost Per Lead. When you apply through our platform and get matched with a premium employer, we earn a commission for connecting qualified candidates with opportunities. This doesn't affect your application or potential earnings.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        <h4 class="text-xl font-semibold mb-2">How much can I earn with CPL opportunities?</h4>
+                        <p class="text-gray-600">Our CPL rates range from $85 to $150 per qualified lead, depending on your experience and the specific role. High-demand positions like software development typically command the highest CPL rates.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        <h4 class="text-xl font-semibold mb-2">Is there any cost to apply?</h4>
+                        <p class="text-gray-600">No, applying through our platform is completely free for job seekers. We only earn when you get matched with one of our premium employer partners.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-2xl">
+                        <h4 class="text-xl font-semibold mb-2">How long does the application process take?</h4>
+                        <p class="text-gray-600">Our streamlined application process takes approximately 5-10 minutes to complete. Once submitted, you'll receive instant feedback on your CPL qualification status.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-6">Ready to Start Earning Premium CPL Rates?</h2>
+                <p class="text-xl mb-8 opacity-90">Join thousands of professionals who have boosted their income with our high-value CPL opportunities</p>
+                
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="apply-now-btn accent-gradient text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Apply Now - HIGH CPL
+                    </button>
+                    
+                    <button class="demo-btn bg-white text-green-600 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 inline-flex items-center">
+                        <i class="fas fa-play mr-2"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                
+                <div class="mt-8 text-sm opacity-80">
+                    <i class="fas fa-lock mr-2"></i> Your information is secure and protected
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-gradient-to-r from-green-500 to-blue-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-laptop-house text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold">HigherIncomeJobs</h4>
+                            <p class="text-sm opacity-75">Premium CPL Work Portal</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted partner for high CPL remote opportunities with premium US companies and live processing.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-green-700 rounded-full flex items-center justify-center hover:bg-green-800 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center hover:bg-pink-700 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">High CPL Roles</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">Software Development</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Digital Marketing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Sales Executive</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Project Management</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">CPL Support</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors">CPL Advisors</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Application Help</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">CPL Verification</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Payment Support</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-semibold mb-4">Contact Info</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span>+1 (888) 555-4321</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>cpl@higherincomejobs.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>Remote - Serving All US States</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>24/7 CPL Support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 HigherIncomeJobs CPL. All rights reserved. | Privacy Policy | Terms of Service | CPL Agreement</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Bubble -->
+    <div class="chat-bubble" onclick="openChat()">
+        <i class="fas fa-comments mr-2"></i>
+        <span class="live-indicator">CPL Advisor</span>
+    </div>
+</body>
+</html>
